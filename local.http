@@ -1,0 +1,28 @@
+### Register
+POST http://localhost:3000/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Micael Illos",
+    "email":  "mail@micaelil.com",
+    "password": "123456"
+}
+
+### Login
+POST http://localhost:3000/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "email":  "mail@micaelil.com",
+    "password": "123456"
+}
+
+### JWT token example
+GET http://localhost:3000/posts HTTP/1.1
+content-type: application/json
+auth-token: kyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkYjNiYTM4ODk4YzBhMThmNTYwYzgiLCJpYXQiOjE2MDQxNzY5MjJ9.ySS3GPrEYY52P44ogyGzFllkCnvSS6BeLmzCwFj064w
+
+{
+    "email":  "mail@micaelil.com",
+    "password": "123456"
+}
